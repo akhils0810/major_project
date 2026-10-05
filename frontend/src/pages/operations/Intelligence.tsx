@@ -360,7 +360,7 @@ export default function Intelligence() {
                     </h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-6">
-                    This matrix defines how the Varunetra ML engine triages incoming citizen reports and multi-source telemetry to establish ground truth.
+                    This matrix defines how the VayuDrishti ML engine triages incoming citizen reports and multi-source telemetry to establish ground truth.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="border border-emerald-500/20 bg-emerald-500/5 rounded-lg p-5">

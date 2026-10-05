@@ -23,7 +23,7 @@ export default function AuditTrail({ eventId }: AuditTrailProps) {
             id: 2,
             action: 'CONFIDENCE_UPDATED',
             description: 'Confidence score elevated from 68% to 91% following spatial density analysis.',
-            actor: 'VARUNETRA_ML',
+            actor: 'VAYUDRISHTI_ML',
             actorType: 'ai',
             timestamp: subMinutes(now, 138),
             icon: Activity

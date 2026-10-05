@@ -5,7 +5,7 @@ export default function AIAssistant() {
     const [isOpen, setIsOpen] = useState(false);
     const [isMinimized, setIsMinimized] = useState(false);
     const [messages, setMessages] = useState([
-        { role: 'assistant', text: 'VARUNETRA AI online. I can analyze recent weather events, query source reliability, or summarize impact estimates. How can I assist?' }
+        { role: 'assistant', text: 'VAYUDRISHTI AI online. I can analyze recent weather events, query source reliability, or summarize impact estimates. How can I assist?' }
     ]);
     const [input, setInput] = useState('');
     const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -64,7 +64,7 @@ export default function AIAssistant() {
                 <div className="w-6 h-6 bg-teal-500/20 text-teal-500 rounded-full flex items-center justify-center">
                     <Bot size={14} />
                 </div>
-                Varunetra AI
+                VayuDrishti AI
                 <Maximize2 size={14} className="text-muted-foreground ml-2" />
             </button>
         );
@@ -79,7 +79,7 @@ export default function AIAssistant() {
                         <Bot size={18} />
                     </div>
                     <div>
-                        <h3 className="font-bold text-sm text-foreground leading-none">VARUNETRA AI</h3>
+                        <h3 className="font-bold text-sm text-foreground leading-none">VAYUDRISHTI AI</h3>
                         <span className="text-[10px] text-emerald-500 font-bold tracking-widest uppercase flex items-center gap-1 mt-1">
                             <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
                             Online
@@ -119,7 +119,7 @@ export default function AIAssistant() {
                         type="text" 
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder="Ask VARUNETRA AI..."
+                        placeholder="Ask VAYUDRISHTI AI..."
                         className="w-full bg-background border border-input rounded-full pl-4 pr-12 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
                     />
                     <button 

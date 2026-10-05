@@ -302,7 +302,7 @@ export default function CitizenReport() {
                                     <Activity className="text-primary" />
                                     Track Your Report
                                 </h2>
-                                <p className="mt-2 text-muted-foreground text-sm">See how your contribution is helping the Varunetra network.</p>
+                                <p className="mt-2 text-muted-foreground text-sm">See how your contribution is helping the VayuDrishti network.</p>
                             </div>
 
                             {trackError && (

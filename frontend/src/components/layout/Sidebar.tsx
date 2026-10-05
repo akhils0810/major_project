@@ -51,7 +51,7 @@ export default function Sidebar() {
                 </div>
                 <div className="flex flex-col">
                     <span className="font-bold text-sm tracking-widest text-primary-foreground leading-tight">
-                        VARUNETRA
+                        VAYUDRISHTI
                     </span>
                     <span className="text-[9px] uppercase tracking-wider text-muted-foreground mt-0.5">
                         National Weather Updates
