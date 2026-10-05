@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  :root {
+    --background: 43 19% 94%; /* Warm off-white #f2efeb */
+    --foreground: 205 45% 14%; /* Dark text #132532 */
+    --card: 0 0% 100%; /* Pure white for light mode cards */
+    --card-foreground: 205 45% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 205 45% 14%;
+    --primary: 205 45% 14%; /* Dark navy primary */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 43 10% 90%;
+    --secondary-foreground: 205 45% 14%;
+    --muted: 43 10% 88%;
+    --muted-foreground: 205 15% 45%;
+    --accent: 184 100% 25%; /* Teal accent */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 43 10% 85%; /* #cfcbc5 equivalent */
+    --input: 43 10% 85%;
+    --ring: 205 45% 14%;
+    --radius: 0.5rem;
+    
+    --sidebar: 206 48% 12%; /* Dark navy sidebar #10212e */
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-muted: 206 30% 25%;
+  }
+
+  .dark {
+    --background: 206 48% 9%; /* Darker navy background for main content area #0b151e */
+    --foreground: 0 0% 98%;
+    --card: 206 48% 12%; /* Dark navy for cards #10212e */
+    --card-foreground: 0 0% 98%;
+    --popover: 206 48% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 184 100% 35%; /* Lighter teal for primary accents in dark mode */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 206 30% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 206 30% 16%;
+    --muted-foreground: 205 15% 65%;
+    --accent: 184 100% 35%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 206 30% 22%; /* Subtle border */
+    --input: 206 30% 22%;
+    --ring: 184 100% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[hsl(var(--border))];
+  }
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))] font-sans antialiased;
+  }
+}
